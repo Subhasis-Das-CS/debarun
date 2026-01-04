@@ -24,10 +24,14 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 0;
+  /* Use Flexbox to center content */
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  min-height: 100vh;       /* Ensures the body takes full screen height */
+  background-color: #1a1f33; /* Optional: Dark background to match the quiz theme */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 h1 {

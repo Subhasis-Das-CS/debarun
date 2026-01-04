@@ -1,0 +1,109 @@
+.leaderboard-container {
+  background-color: #252d4a;
+  width: 400px; /* Adjust width as needed */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leaderboard-header h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  border-bottom: 2px solid #3e4a70;
+  padding-bottom: 15px;
+}
+
+.loading-text, .no-scores {
+  text-align: center;
+  color: #a0aec0;
+  margin-top: 20px;
+}
+
+/* List Items */
+.leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 400px; /* Scrollable if too many items */
+  overflow-y: auto;
+}
+
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  background-color: #2f3857;
+  padding: 12px 15px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.leaderboard-item:hover {
+  transform: scale(1.02);
+  background-color: #3b4668;
+}
+
+/* Rank Icon/Number */
+.player-rank {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.rank-number {
+  color: #8da0c7;
+  font-size: 14px;
+}
+
+/* Player Info */
+.player-info {
+  flex-grow: 1;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.player-date {
+  font-size: 11px;
+  color: #8da0c7;
+}
+
+/* Score */
+.player-score {
+  font-weight: bold;
+  font-size: 18px;
+  color: #4ade80; /* Green score color */
+}
+
+/* Special Styles for Top 3 */
+.rank-1 {
+  background: linear-gradient(90deg, #2f3857 0%, #3d3522 100%);
+  border: 1px solid #ffd700;
+}
+
+.rank-2 {
+  border: 1px solid #c0c0c0;
+}
+
+.rank-3 {
+  border: 1px solid #cd7f32;
+}
+
+/* Custom Scrollbar */
+.leaderboard-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.leaderboard-list::-webkit-scrollbar-thumb {
+  background-color: #4a5578;
+  border-radius: 4px;
+}

@@ -1,0 +1,146 @@
+.quiz-container {
+  background-color: #252d4a;
+  color: #ffffff;
+  width: 450px;
+  min-height: 200px;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Score Section */
+.score-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Question Section */
+.question-section {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.question-count {
+  margin-bottom: 20px;
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer-button {
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 2px solid #2f3857;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.answer-button:hover:not(:disabled) {
+  background-color: #3e4a70;
+  border-color: #586894;
+}
+
+.answer-button:disabled {
+  cursor: default;
+}
+
+/* Feedback Colors */
+.answer-button.correct {
+  background-color: #2f922f;
+  border-color: #2f922f;
+}
+
+.answer-button.incorrect {
+  background-color: #ff3333;
+  border-color: #ff3333;
+}
+
+.reset-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #586894;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}/* Menu Section */
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 15px;
+  text-align: center;
+}
+
+.name-input {
+  width: 80%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #586894;
+  background-color: #1a1f33;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.name-input:focus {
+  border-color: #7d96e3;
+  background-color: #202740;
+}
+
+.start-btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #2f922f; /* Green start button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.start-btn:hover:not(:disabled) {
+  background-color: #3bb63b;
+}
+
+.start-btn:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
